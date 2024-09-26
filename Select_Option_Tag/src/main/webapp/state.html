@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         
+    <script>
+        function fun()
+        {
+            window.alert("Press Ok, To Open Captial Name")
+            document.xyz.action = "openServlet";
+            document.xyz.submit();
+        }
+    </script>
+    <form name="xyz"> Select State
+             <select name='s1' onchange="fun()">
+                <option>choose the option</option>
+                <option value="Telangana">Telangana</option>
+                <option value="TamilNadu">TamilNadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Goa">Goa</option>
+             </select>
+    </form>
+    
+</body>
+</html>

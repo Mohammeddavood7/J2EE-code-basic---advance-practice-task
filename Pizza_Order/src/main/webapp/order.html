@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image{
+             background-image: url("pizza.jpg");
+             background-attachment: scroll;
+             color:white;
+             padding: 10px;
+             margin: 10px;
+        }
+        input{
+            border: 2px solid black;
+            padding: 10px;
+            outline: none;
+        
+        }
+        input:focus
+        {
+            border-color: blue;
+        }
+        div{
+            font-size: x-large;
+        }
+        
+    </style>
+</head>
+<body>
+      <div id="image">
+        <form action="order" method="post">
+        <h1>Order Your Pizza Here</h1>
+        <div>Name &nbsp; &nbsp;: <input type="text" name="name" id="name"></div> <br>
+        Select The Crust : <select name="crust" id="crust">
+           <option value="deep">Deep Crust</option>
+            <option value="medium">Medium Crust</option>
+            <option value="light">Light Crust</option>
+        </select>
+
+        <div> <br>
+            <label for="toppings"><ins> <strong>Toppings</strong></ins></label> <br> <br>
+            <input type="checkbox" name="topping" value="peas"> Peas <br>
+            <input type="checkbox" name="topping" id="paneer" value="paneer"> Paneer <br>
+            <input type="checkbox" name="topping" id="redpeppers" value="redpeppers"> Red Peppers <br>
+            <input type="checkbox" name="topping" id="pineapple" value="pineapple"> Pineapple <br>
+            <input type="checkbox" name="topping" id="onion" value="onion"> Onion <br>
+            <input type="checkbox" name="topping" id="tomato" value="tomato"> Tomato <br> <br>
+        </div>
+
+        <div>  <br>
+            Select 1 <strong>Free</strong> Appeitizer 
+            <input type="radio" name="apt" value="garlicbread">  Garlic Bread
+            <input type="radio" name="apt" id="cheese" value="cheesegarlicbread"> Cheese Garlic Bread
+            <input type="radio" name="apt" id="vegsoop" value="vegsoop"> Veg Soop
+            <input type="radio" name="apt" id="vegsandwich" value="vegsandwich"> Veg Sandwich <br> <br>
+        </div>
+
+        <div>
+            <label for="address"> <ins><strong>Address:</strong></ins> </label> <br> <br>
+            <input type="text" name="address" id="address">
+        </div>
+        
+        <div> <br>
+            <strong> <ins>Credit Card : </ins></strong> <br> <br>
+            <input type="radio" name="visa" id="visa" value="visa"> Visa Card
+            <input type="radio" name="mastercard" id="mastercard" value="mastercard"> Master Card
+            <input type="radio" name="americanexpress" id="americanexpress" value="americanexpress"> American Express Card <br> <br>
+        </div>
+    
+       <div> <br>
+        <label for="creditcard">Credit Card Number: </label> &nbsp; &nbsp; <input type="text" name="creditcard" id="creditcard"> &nbsp; &nbsp;&nbsp; 
+        <label for="repeatcreditcard">Repeat Credit Card Number: </label> &nbsp; &nbsp; <input type="text" name="repeatcreditcard" id="repeatcreditcard"> <br> <br>
+       </div>
+       <input type="submit" name="submit" id="submit" value="OrdrPizza">
+    </form>
+      </div>
+
+
+</body>
+</html>

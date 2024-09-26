@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+   div
+   {
+      background-color:darkcyan;
+      color:white;
+       width:500px;
+       height:250px;
+      margin:auto;
+      align-content: center;
+   } 
+   
+   th {
+   text-align: left;
+   }
+   
+  
+</style>
+<body>
+     <div>
+    <form action="imgUploadOnBD" method="post" enctype="multipart/form-data">
+	<table>
+	<caption>--SEE DATABASE IMAGE--</caption>
+	<tr>
+	   <th>Image ID: </th> <td><input type="text" id="id" name="id"> </td>
+	</tr>
+	<tr>
+	   <th>Image Name: </th> <td><input type="text" id="name" name="name"> </td>
+	</tr>
+	</table>
+	<label>Upload Image: </label> &nbsp; &nbsp;     <input type="file" id="image" name="image"> 
+    <pre>                  <input type="submit"> </pre>	
+	
+	</form>
+				<pre>                 <a href="showimage.html"><button>see image</button></a></pre> 
+	
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee http://xmlns.jcp.org/xml/ns/javaee">
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ViewServlet</display-name>
+    <servlet-name>ViewServlet</servlet-name>
+    <servlet-class>login.update.view.logout.ViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewServlet</servlet-name>
+    <url-pattern>/ViewServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateServlet</display-name>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>login.update.view.logout.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogOutServlet</display-name>
+    <servlet-name>LogOutServlet</servlet-name>
+    <servlet-class>login.update.view.logout.LogOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogOutServlet</servlet-name>
+    <url-pattern>/LogOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateServelt</display-name>
+    <servlet-name>UpdateServelt</servlet-name>
+    <servlet-class>login.update.view.logout.UpdateServelt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServelt</servlet-name>
+    <url-pattern>/UpdateServelt</url-pattern>
+  </servlet-mapping>
+</web-app>

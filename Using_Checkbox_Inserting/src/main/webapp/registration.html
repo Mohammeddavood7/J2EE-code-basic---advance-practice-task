@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            background-color: lightcoral;
+            margin: auto;
+            align-items: center;
+            padding-left: 100px;
+           padding-bottom:5px;
+           padding-top:2px;
+            width: 300px;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h1>Person Details</h1>
+    <form action="parent" method="post">
+     <div> 
+        <pre>Name    </pre> <input type="text" name="name" id="name" autofocus>
+        <pre>Age     </pre> <input type="number" autocomplete="off" name="age" id="age">
+        <pre>Mobile  </pre> <input type="number" name="mobile" id="mobile" >
+     </div>
+     <div>
+        <h3>Select Your Gender</h3>
+        <pre><input type="radio" name="gender" value="Male" id="gender"> Male   <input type="radio" name="gender" value="Female" id="gender"> Female</pre>
+     </div>
+     <div>
+        <h3>Select Your Hobbies</h3>
+        <pre><input type="checkbox" name="h1" id="h1" value="Reading"> Reading    <input type="checkbox" name="h2" id="h2" value="Searching"> Searching</pre>
+        <pre><input type="checkbox" name="h3" id="h3" value="Sleeping"> Sleeping   <input type="checkbox" name="h4" id="h4" value="Dancing"> Dancing</pre>
+     </div>
+     <pre> <input type="submit" name="button" value="    Click    ">  </pre>
+    </form>
+</div>
+</body>
+</html>
